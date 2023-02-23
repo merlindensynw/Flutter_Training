@@ -1,16 +1,15 @@
 import 'package:flutter/material.dart';
-
+import 'package:sampleproject/register_wrapper.dart';
+import 'package:sampleproject/welcome_page.dart';
 import 'header.dart';
 import 'input_wrapper.dart';
 
 class LoginPage extends StatelessWidget {
+  const LoginPage({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return Container(
-      decoration: BoxDecoration(
-          image: DecorationImage(
-              image: AssetImage("assets/images/image.jpeg"),
-              fit: BoxFit.cover)),
+    return AppBG(
       child: Scaffold(
         backgroundColor: Colors.transparent,
         body: Column(
@@ -19,42 +18,28 @@ class LoginPage extends StatelessWidget {
             SizedBox(
               height: 80,
             ),
-            InputWrapper()
+            InputWrapper(),
           ],
         ),
       ),
     );
   }
-// @override
-// Widget build(BuildContext context){
-//   return Scaffold(
-//     body:Container(
-//       width: double.infinity,
-//       decoration: BoxDecoration(
-//         gradient: LinearGradient(begin: Alignment.topCenter,colors: [
-//           Colors.cyan,
-//           Colors.cyan,
-//           Colors.cyan,
-//         ]),
-//       ),
-//       child: Column(
-//         children: <Widget>[
-//           header(),
-//         SizedBox(height: 80,),
-//           Expanded(child: Container(
-//             decoration: BoxDecoration(
-//               color: Colors.white,
-//               borderRadius: BorderRadius.only(
-//                 topLeft: Radius.circular(60),
-//                 topRight: Radius.circular(60),
-//               )
-//               ),
-//             child: InputWrapper(),
-//             ),
-//           )
-//         ],
-//       ),
-//     )
-//   );
-// }
+}
+
+class AppBG extends StatelessWidget {
+  const AppBG({Key? key, required this.child}) : super(key: key);
+  final Widget child;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      decoration: BoxDecoration(
+        image: DecorationImage(
+          image: AssetImage("assets/images/image.jpeg"),
+          fit: BoxFit.cover,
+        ),
+      ),
+      child: child,
+    );
+  }
 }
