@@ -11,31 +11,37 @@ class InputWrapper extends StatelessWidget {
       padding: EdgeInsets.all(30),
       child: Column(
         children: <Widget>[
-          SizedBox(height: 40,),
-
+          SizedBox(
+            height: 40,
+          ),
           InputField(),
-          SizedBox(height: 40,),
+          SizedBox(
+            height: 40,
+          ),
           button(),
           SizedBox(
             height: 20,
-          ),git
+          ),
           Text(
             "Forgot password?",
-            style: TextStyle(color: Colors.black,fontSize: 15),
+            style: TextStyle(color: Colors.black, fontSize: 15),
           ),
-                SizedBox(
-                  height: 10,
-                ),
-                TextButton(
-                  onPressed: () { Navigator.push(context, MaterialPageRoute(builder: (context)=>RegisterWrapper()));
-                  },
-                  child: Text(
-                    "Register",
-                    style: TextStyle(color: Colors.black,fontSize: 15),
-                  ),
-                ),
-                SizedBox(height: 40,),
-
+          SizedBox(
+            height: 10,
+          ),
+          TextButton(
+            onPressed: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => RegisterWrapper()));
+            },
+            child: Text(
+              "Register",
+              style: TextStyle(color: Colors.black, fontSize: 15),
+            ),
+          ),
+          SizedBox(
+            height: 40,
+          ),
         ],
       ),
     );
