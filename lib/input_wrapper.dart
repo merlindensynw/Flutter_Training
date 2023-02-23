@@ -18,7 +18,7 @@ class InputWrapper extends StatelessWidget {
           button(),
           SizedBox(
             height: 20,
-          ),
+          ),git
           Text(
             "Forgot password?",
             style: TextStyle(color: Colors.black,fontSize: 15),
