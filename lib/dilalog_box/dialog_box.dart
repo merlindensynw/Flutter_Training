@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sampleproject/display_details.dart';
+import 'package:sampleproject/dilalog_box/display_details.dart';
 
 void main() {
   runApp(Details());

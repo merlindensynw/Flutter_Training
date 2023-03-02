@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sampleproject/input_field.dart';
-import 'package:sampleproject/register_wrapper.dart';
-import 'package:sampleproject/welcome_page.dart';
+import 'package:sampleproject/project/welcome_page.dart';
 
 class button extends StatelessWidget{
   @override
@@ -26,14 +24,6 @@ class button extends StatelessWidget{
         ),
       ),
     );
-    // Within the `FirstRoute` widget
-    // Within the `FirstRoute` widget
-    onPressed: () {
-      Navigator.push(
-        context,
-        MaterialPageRoute(builder: (context) => RegisterWrapper()),
-      );
-    };
 }
 }
 

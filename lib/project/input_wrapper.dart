@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sampleproject/register.dart';
-import 'package:sampleproject/register_wrapper.dart';
+import 'package:sampleproject/project/register_wrapper.dart';
 
 import 'button.dart';
 import 'input_field.dart';

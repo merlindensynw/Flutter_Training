@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sampleproject/register_wrapper.dart';
-import 'package:sampleproject/welcome_page.dart';
+
 import 'header.dart';
 import 'input_wrapper.dart';
 

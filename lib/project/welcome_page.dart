@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:sampleproject/login_page.dart';
+
+import 'login_page.dart';
 
 class WelcomePage extends StatelessWidget {
   const WelcomePage({super.key});
@@ -17,10 +18,9 @@ class WelcomePage extends StatelessWidget {
               fontWeight: FontWeight.bold
             ),
 
-          ),
-        ),
-      ),
-    );
-
+                ),
+              ),
+            ),
+        );
   }
 }
